@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Containers Example</title>
+    </head>
+    <style>
+.container {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+   
+}
+
+.Static-Elements{
+    height: 100px;
+    width: 150px;
+    background-color: red;
+   
+}
+.Relative-Elements{
+    position: relative;
+    top: 50px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+}
+.Absolute-Elements {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: green;
+}
+.Fixed-Elements {
+    position: fixed;
+    top: 20px;
+    left: 30px;
+    width: 30px;
+    height: 30px;
+    background-color: orange;
+        }
+    
+    img{
+        background-color: antiquewhite;
+        width: 200px;
+        height: 200px;
+        border-style: dashed;
+        
+    }
+}
+#container5 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-container img {
+    width: 120px;
+    height: 120px;
+    margin: 5px;
+}
+    </style>
+    
+
+<body>
+    <div class="container">
+        <div class="content">Static-Elements</div>
+        <img src="ima_a.jpg">
+    </div>
+    <div class="container">
+        <div class="content">Relative-Elements</div>
+        <img src="img_b.jpg">
+    </div>
+    <div class="container">
+        <div class="content">Absolute-Elements</div>
+        <img src="img_c.jpg">
+    </div>
+    <div class="container">
+        <div class="content">Fixed-Elements</div>
+        <img src="img_d.jpg">
+    </div>
+    <div class="container">
+        <div class="flex-container">
+            <img src="img1.jpg" alt="Image 1">
+            <img src="img2.jpg" alt="Image 2">
+            <img src="img3.jpg" alt="Image 3">
+            <img src="img4.jpg" alt="Image 4">
+        </div>
+    </div>
+
+    
+    
+</body>
+    
+    </html>
